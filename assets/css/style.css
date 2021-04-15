@@ -19,16 +19,23 @@ Main
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 #site_main .side_bar{
-    z-index: 1;
+    z-index: 2;
     background-color: black;
     width: 230px;
     height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
+}
+
+#site_main .wrapper{
+    position: absolute;
+    top: 0;
+    left: 230px;
 }
 
 
@@ -43,7 +50,7 @@ Footer
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
 }
 
 
@@ -68,5 +75,9 @@ Media querys
 @media screen and (max-width: 540px){
     #site_main .side_bar{
         width: 50px;
+    }
+
+    #site_main .wrapper{
+        left: 50px;
     }
 }
