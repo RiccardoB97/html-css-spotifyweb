@@ -12,7 +12,10 @@ body{
 
 /* Utilities */
 
-
+.opaco{
+    color: white;
+    opacity: 50%;
+}
 
 /******
 Main
@@ -89,10 +92,6 @@ nav ul .home a{
     color: white;
 }
 
-nav ul li .opaco{
-    color: white;
-    opacity: 50%;
-}
 
 /* Playlist section */
 
@@ -134,18 +133,33 @@ nav ul li .opaco{
 
 
 
-
-
-
 /* Main content */
 
 #site_main .wrapper{
-    height: 1000px;
+    height: calc(100vh - 80px);
     width: calc(100vw - 230px);
     margin-left: 230px;
-    background-color: #141922;;
+    background-color: #141922;
 }
 
+/* Top navbar */
+
+.top_navbar{
+    padding-top: 100px;
+}
+
+.top_navbar a{
+    font-size: 12px;
+}
+
+.top_navbar .evidenzia::after{
+    content: "";
+    display: block;
+    background-color:#ADFF2F;
+    height: 1px;
+    width: 50px;
+    margin: -5px 30px;
+}
 
 /******
 Footer
@@ -176,9 +190,9 @@ Hover effects
     transform: scale(1.1);
 }
 
-
 .opaco:hover{
     opacity: 100%;
+    color: white;
 }
 
 
