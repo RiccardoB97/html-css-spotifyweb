@@ -50,6 +50,15 @@ Main
     left: 0;
 }
 
+nav .logo{
+    height: 40px;
+}
+
+nav .logo_small{
+    display: none;
+    height: 25px;
+}
+
 /* Main content */
 
 #site_main .wrapper{
@@ -105,5 +114,24 @@ Media querys
 
     #site_main .wrapper{
         left: 50px;
+    }
+
+    nav .logo{
+        display: none;
+    }
+
+    nav .logo_small{
+        display: inline-block;
+        margin-top: 5px;
+    }
+
+    nav ul li{
+        justify-content: center;
+    }
+
+    nav ul li .nav-link{
+        padding: 0;
+        display: flex;
+        justify-content: center;
     }
 }
