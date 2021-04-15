@@ -64,3 +64,9 @@ Footer
 /******
 Media querys
 *******/
+
+@media screen and (max-width: 540px){
+    #site_main .side_bar{
+        width: 50px;
+    }
+}
