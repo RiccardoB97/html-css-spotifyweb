@@ -1,0 +1,66 @@
+/* Common classes */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Utilities */
+
+
+
+
+/******
+Main
+*******/
+
+#site_main .top_bar{
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.571);
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#site_main .side_bar{
+    z-index: 1;
+    background-color: black;
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+/******
+Footer
+*******/
+
+#site_footer{
+    height: 90px;
+    width: 100%;
+    background-color:  #282828;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******
+Media querys
+*******/
