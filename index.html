@@ -25,22 +25,32 @@
 
         <!-- Side bar -->
         <div class="side_bar">
-            <nav>
+            <nav class="navbar navbar-dark bg-black">
                 <ul class="nav flex-column">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <!-- Logo visibile from md to xl -->
+                        <a class="nav-link logo_img" href="#">
                             <img class="logo" src="./assets/img/logo.svg" alt="spotify logo">
                             <img class="logo_small" src="./assets/img/logo-small.svg" alt="small spotify logo">
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item home">
+                        <a class="nav-link" href="#">
+                            <img src="./assets/img/home.svg" alt="">
+                            <span class="hidden_links">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item link">
+                        <a class="nav-link" href="#">
+                            <img src="./assets/img/search.svg" alt="">
+                            <span class="opaco hidden_links">Cerca</span>
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cerca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">La tua libreria</a>
+                        <a class="nav-link" href="#">
+                            <img src="./assets/img/libreria.svg" alt="">
+                            <span class="opaco hidden_links">La tua libreria</span>
+                        </a>
                     </li>
                 </ul>
             </nav>

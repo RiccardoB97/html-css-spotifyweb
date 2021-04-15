@@ -40,6 +40,7 @@ Main
 
 /* Side bar */
 
+/* Fix the side bar to the left */
 #site_main .side_bar{
     z-index: 2;
     background-color: black;
@@ -50,14 +51,46 @@ Main
     left: 0;
 }
 
+/* Removes bootstrap paddings */
+.navbar{
+    padding: 0!important;
+}
+
+nav .logo_img{
+    margin-bottom: 25px;
+}
+
 nav .logo{
     height: 40px;
 }
 
+/* Hidden small logo for xs screen */
 nav .logo_small{
     display: none;
     height: 25px;
 }
+
+/* Set size to all img in side navbar */
+nav ul li a img{
+    height: 25px;
+}
+
+/* Gives lime border to home */
+nav ul .home{
+    border-left: 2px solid #ADFF2F;
+}
+nav ul .home a{
+    color: white;
+}
+
+nav ul li .opaco{
+    color: white;
+    opacity: 50%;
+}
+
+
+
+
 
 /* Main content */
 
@@ -99,6 +132,13 @@ Hover effects
 }
 
 
+nav ul li .opaco:hover{
+    opacity: 100%;
+}
+
+
+
+
 
 
 
@@ -131,7 +171,25 @@ Media querys
 
     nav ul li .nav-link{
         padding: 0;
+        padding-bottom: 10px;
         display: flex;
-        justify-content: center;
+    }
+
+    /* Hides the links and shows the images */
+    nav .hidden_links{
+        display: none;
+    }
+
+    /* Removes margin bottom from logo pushing up the other elements */
+    nav .logo_img{
+        margin-bottom: 0;
+    }
+
+    nav ul .home{
+        border: none;
+    }
+
+    .navbar{
+        justify-content: center!important;
     }
 }
