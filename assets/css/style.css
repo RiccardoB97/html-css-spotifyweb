@@ -1,16 +1,18 @@
 /* Common classes */
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 /* Utilities */
 
 
 
-
 /******
 Main
 *******/
+
+/* Top bar */
 
 #site_main .top_bar{
     height: 90px;
@@ -20,22 +22,41 @@ Main
     top: 0;
     left: 0;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
+
+#site_main .upgrade{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    transition: 0.5s;
+    padding: 10px 40px;
+
+}
+
+
+/* Side bar */
 
 #site_main .side_bar{
     z-index: 2;
     background-color: black;
     width: 230px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 0;
     left: 0;
 }
 
+/* Main content */
+
 #site_main .wrapper{
     position: absolute;
     top: 0;
     left: 230px;
+    background-color: #141922;;
 }
 
 
@@ -60,8 +81,13 @@ Footer
 
 
 
+/******
+Hover effects
+*******/
 
-
+#site_main .upgrade:hover{
+    transform: scale(1.1);
+}
 
 
 
