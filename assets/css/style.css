@@ -34,6 +34,12 @@ body{
     overflow-y: auto;
     overflow-x: hidden;
     background-color: #141922;
+    color: white;
+}
+
+#content h2{
+    font-size: 1.5rem;
+    font-weight: 900;
 }
 
 
@@ -247,10 +253,6 @@ nav ul .home a{
     color: white;
 }
 
-.recent h2{
-    font-size: 1.5rem;
-    font-weight: 900;
-}
 
 .album{
     padding-top: 20px;
@@ -274,22 +276,16 @@ nav ul .home a{
 
 .album .subtitle{
     opacity: 50%;
-    color: white;
     font-size: 0.8rem;
 }
 
-
-
-/* Created section */
-.creato{
-    color: white;
+.popular img{
+    border-radius: 50%;
 }
 
-.creato h2{
-    font-size: 1.5rem;
-    font-weight: 900;
+.popular .play-overlay{
+    border-radius: 50%;
 }
-
 
 
 
