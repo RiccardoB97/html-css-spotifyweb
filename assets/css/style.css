@@ -18,8 +18,14 @@ body{
 
 #wrapper{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: black;
+    overflow: hidden;
+}
+
+#site_main{
+    width: 100%;
+    height: calc(100vh - 90px);
 }
 
 /* Utilities */
@@ -43,6 +49,9 @@ Main
     float: left;
     align-items: center;
     justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 
 #site_main .upgrade{
@@ -63,7 +72,7 @@ Main
     float: left;
     background-color: black;
     width: 230px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 90px);
     overflow: hidden;
 }
 
@@ -150,7 +159,9 @@ nav ul .home a{
 }
 
 /* Top navbar */
-
+.top_navbar{
+    padding-top: 100px;
+}
 
 .top_navbar a{
     font-size: 12px;
