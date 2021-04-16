@@ -28,6 +28,16 @@ body{
     height: calc(100vh - 90px);
 }
 
+#site_main #content{
+    float: left;
+    width: calc(100% - 230px);
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #141922;
+}
+
+
 /* Utilities */
 
 .opaco{
@@ -148,12 +158,11 @@ nav ul .home a{
 
 /* User section */
 .user {
-    position: fixed;
-    bottom: 90px;
-    left: 0;
     background-color: black;
     width: 230px;
     padding: 10px;
+    position: sticky;
+    bottom: 0;
 }
 
 .user img{
@@ -181,16 +190,6 @@ nav ul .home a{
     padding-left: 10px;
 }
 
-/* Main content */
-
-#site_main #content{
-    float: left;
-    width: calc(100% - 230px);
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    background-color: #141922;
-}
 
 /* Top navbar */
 .top_navbar{
@@ -239,6 +238,7 @@ Hover effects
 .opaco:hover{
     opacity: 100%;
     color: white;
+    text-decoration: none;
 }
 
 
