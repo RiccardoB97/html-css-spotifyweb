@@ -64,6 +64,7 @@ Main
     background-color: black;
     width: 230px;
     height: calc(100vh - 80px);
+    overflow: hidden;
 }
 
 /* Removes bootstrap paddings */
@@ -105,7 +106,6 @@ nav ul .home a{
     color: white;
     padding: .5rem 1rem;
     margin-top: 1rem;
-    overflow: hidden;
 }
 
 .playlist h4{
