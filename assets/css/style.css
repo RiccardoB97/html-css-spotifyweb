@@ -74,6 +74,7 @@ Main
     width: 230px;
     height: calc(100vh - 90px);
     overflow: hidden;
+    font-size: 12px;
 }
 
 /* Removes bootstrap paddings */
@@ -127,7 +128,7 @@ nav ul .home a{
 }
 
 .playlist ul li{
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 .playlist ul li a{
@@ -145,7 +146,40 @@ nav ul .home a{
     margin-right: 10px;
 }
 
+/* User section */
+.user {
+    position: fixed;
+    bottom: 90px;
+    left: 0;
+    background-color: black;
+    width: 230px;
+    padding: 10px;
+}
 
+.user img{
+    height: 1rem;
+}
+
+.user a{
+    text-decoration: none;
+}
+
+.user hr{
+    background-color: white;
+}
+
+.user .profile{
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: gray;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+.user strong{
+    color: white;
+    padding-left: 10px;
+}
 
 /* Main content */
 
@@ -264,7 +298,12 @@ Media querys
         width: calc(100% - 50px);
     }
 
+    /* Hides playlist section */
     .playlist{
+        display: none;
+    }
+    /* Hides user section */
+    .user{
         display: none;
     }
 
