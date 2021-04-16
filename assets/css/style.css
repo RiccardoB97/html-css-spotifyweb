@@ -220,9 +220,72 @@ nav ul .home a{
 }
 
 .recent h2{
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 900;
 }
+
+.recent .album{
+    padding-top: 20px;
+    height: 100%;
+}
+
+.recent .album a{
+    text-decoration: none;
+    color: white;
+}
+
+.recent .album img{
+    width: 100%;
+}
+
+.recent .album .title{
+    font-size: 1rem;
+    padding-top: 10px;
+    font-weight: 900;
+}
+
+.recent .album .subtitle{
+    opacity: 50%;
+    color: white;
+    font-size: 0.8rem;
+}
+
+
+.play{
+    position: relative;
+    width: 100%;
+    margin:auto;
+}
+
+.play-overlay{
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 100%%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.playbutton{
+    text-align: center;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.play:hover .play-overlay, .play:hover .playbutton{
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
 
 
 /******
