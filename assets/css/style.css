@@ -29,7 +29,6 @@ body{
 }
 
 #site_main #content{
-    float: left;
     width: calc(100% - 230px);
     height: 100%;
     overflow-y: auto;
@@ -62,6 +61,7 @@ Main
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 
 #site_main .upgrade{
@@ -77,7 +77,6 @@ Main
 
 /* Side bar */
 
-/* Fix the side bar to the left */
 #site_main .side_bar{
     float: left;
     background-color: black;
@@ -119,6 +118,9 @@ nav ul .home a{
     color: white;
 }
 
+.bot_sidebar{
+    flex-direction: column;
+}
 
 /* Playlist section */
 
@@ -126,6 +128,7 @@ nav ul .home a{
     color: white;
     padding: .5rem 1rem;
     margin-top: 1rem;
+    overflow-y: scroll;
 }
 
 .playlist h4{
@@ -134,7 +137,8 @@ nav ul .home a{
 }
 
 .playlist ul{
-    list-style: none
+    list-style: none;
+    overflow-y: scroll;
 }
 
 .playlist ul li{
@@ -209,6 +213,18 @@ nav ul .home a{
     margin: -5px 30px;
 }
 
+/* Recent section */
+
+.recent{
+    color: white;
+}
+
+.recent h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
 /******
 Footer
 *******/
@@ -218,6 +234,7 @@ Footer
     width: 100%;
     background-color:  #282828;
     float: left;
+    z-index: 2;
 }
 
 
