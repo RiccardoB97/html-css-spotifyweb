@@ -15,101 +15,100 @@
 </head>
 
 <body>
-    <!-- Site main -->
-    <main id="site_main">
-        <!-- Top bar fixed -->
-        <div class="top_bar">
-            <button type="button" class="upgrade btn text-uppercase mr-3">Effettua l'upgrade</button>
-        </div>
-        <!-- /Top bar fixed -->
-
-        <!-- Side bar -->
-        <div class="side_bar">
-            <nav class="navbar navbar-dark bg-black">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <!-- Logo visibile from md to xl -->
-                        <a class="nav-link logo_img" href="#">
-                            <img class="logo" src="./assets/img/logo.svg" alt="spotify logo">
-                            <img class="logo_small" src="./assets/img/logo-small.svg" alt="small spotify logo">
-                        </a>
-                    </li>
-                    <li class="nav-item home">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/img/home.svg" alt="">
-                            <span class="hidden_links">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item link">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/img/search.svg" alt="">
-                            <span class="opaco hidden_links">Cerca</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <img src="./assets/img/libreria.svg" alt="">
-                            <span class="opaco hidden_links">La tua libreria</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- Playlist -->
-            <div class="playlist">
-                <h4 class="text-uppercase">playlist</h4>
-                <ul>
-                    <li><a class="opaco" href="#">
-                            <i class="plus_icon fas fa-plus"></i>
-                            Crea Playlist
-                        </a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                    <li><a class="opaco" href="#">Nome Playlist</a></li>
-                </ul>
-
+    <div id="wrapper" class="clearfix">
+        <!-- Site main -->
+        <main id="site_main">
+            <!-- Side bar -->
+            <div class="side_bar">
+                <nav class="navbar navbar-dark bg-black">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <!-- Logo visibile from md to xl -->
+                            <a class="nav-link logo_img" href="#">
+                                <img class="logo" src="./assets/img/logo.svg" alt="spotify logo">
+                                <img class="logo_small" src="./assets/img/logo-small.svg" alt="small spotify logo">
+                            </a>
+                        </li>
+                        <li class="nav-item home">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/home.svg" alt="">
+                                <span class="hidden_links">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item link">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/search.svg" alt="">
+                                <span class="opaco hidden_links">Cerca</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="./assets/img/libreria.svg" alt="">
+                                <span class="opaco hidden_links">La tua libreria</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Playlist -->
+                <div class="playlist">
+                    <h4 class="text-uppercase">playlist</h4>
+                    <ul>
+                        <li><a class="opaco" href="#">
+                                <i class="plus_icon fas fa-plus"></i>
+                                Crea Playlist
+                            </a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                        <li><a class="opaco" href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
+                <!-- /Playlist -->
             </div>
-            <!-- /Playlist -->
-        </div>
-        <!-- /Side bar -->
+            <!-- /Side bar -->
+            <!-- Top bar fixed -->
+            <div class="top_bar">
+                <button type="button" class="upgrade btn text-uppercase mr-3">Effettua l'upgrade</button>
+            </div>
+            <!-- /Top bar fixed -->
+            <!-- Content -->
+            <div id="content">
+                <section class="top_navbar">
+                    <ul class="nav justify-content-center text-uppercase">
+                        <li class="nav-item evidenzia">
+                            <a class="opaco nav-link" href="#">In evidenza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="opaco nav-link" href="#">Podcast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="opaco nav-link" href="#">classifiche</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="opaco nav-link" href="#">generi e mood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="opaco nav-link" href="#">nuove uscite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="opaco nav-link" href="#">scopri</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <!-- /Content -->
+        </main>
+        <!-- /Site main -->
 
-        <!-- Wrapper -->
-        <div class="wrapper">
-            <section class="top_navbar">
-                <ul class="nav justify-content-center text-uppercase">
-                    <li class="nav-item evidenzia">
-                        <a class="opaco nav-link" href="#">In evidenza</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="opaco nav-link" href="#">Podcast</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="opaco nav-link" href="#">classifiche</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="opaco nav-link" href="#">generi e mood</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="opaco nav-link" href="#">nuove uscite</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="opaco nav-link" href="#">scopri</a>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <!-- /Wrapper -->
-    </main>
-    <!-- /Site main -->
+        <!-- Site footer -->
+        <footer id="site_footer">
 
-    <!-- Site footer -->
-    <footer id="site_footer">
-
-    </footer>
-    <!-- /Site footer -->
+        </footer>
+        <!-- /Site footer -->
+    </div>
 
 
 </body>

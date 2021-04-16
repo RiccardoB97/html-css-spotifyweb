@@ -5,9 +5,21 @@
     padding: 0;
 }
 
+.clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+}
+
+#wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }
 
 /* Utilities */
@@ -26,12 +38,9 @@ Main
 #site_main .top_bar{
     height: 90px;
     background-color: rgba(0, 0, 0, 0.571);
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width: calc(100% - 230px);
     display: flex;
+    float: left;
     align-items: center;
     justify-content: flex-end;
 }
@@ -51,13 +60,10 @@ Main
 
 /* Fix the side bar to the left */
 #site_main .side_bar{
-    z-index: 2;
+    float: left;
     background-color: black;
     width: 230px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height: calc(100vh - 80px);
 }
 
 /* Removes bootstrap paddings */
@@ -99,8 +105,7 @@ nav ul .home a{
     color: white;
     padding: .5rem 1rem;
     margin-top: 1rem;
-    overflow-y: scroll;
-    height: calc(100vh - 90px);
+    overflow: hidden;
 }
 
 .playlist h4{
@@ -135,18 +140,17 @@ nav ul .home a{
 
 /* Main content */
 
-#site_main .wrapper{
-    height: calc(100vh - 80px);
-    width: calc(100vw - 230px);
-    margin-left: 230px;
+#site_main #content{
+    float: left;
+    width: calc(100% - 230px);
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
     background-color: #141922;
 }
 
 /* Top navbar */
 
-.top_navbar{
-    padding-top: 100px;
-}
 
 .top_navbar a{
     font-size: 12px;
@@ -169,10 +173,7 @@ Footer
     height: 90px;
     width: 100%;
     background-color:  #282828;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
+    float: left;
 }
 
 
@@ -209,11 +210,6 @@ Media querys
 @media screen and (max-width: 540px){
     #site_main .side_bar{
         width: 50px;
-    }
-
-    #site_main .wrapper{
-        width: calc(100vw - 50px);
-        margin-left: 50px;
     }
 
     nav .logo{
@@ -253,7 +249,16 @@ Media querys
         justify-content: center!important;
     }
 
+    #site_main #content{
+        width: calc(100% - 50px);
+    }
+
     .playlist{
         display: none;
+    }
+
+
+    #site_main .top_bar{
+        width: calc(100% - 50px);
     }
 }
