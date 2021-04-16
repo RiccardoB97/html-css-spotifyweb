@@ -287,6 +287,10 @@ nav ul .home a{
     border-radius: 50%;
 }
 
+.popular .subtitle, .creato .subtitle{
+    font-size: 0.8rem;
+    opacity: 50%;
+}
 
 
 
