@@ -310,7 +310,7 @@ Footer
     font-size: 0.8rem;
 }
 
-#site_footer a{
+footer a{
     text-decoration: none;
     color: white;
     opacity: 50%;
@@ -319,9 +319,8 @@ Footer
 .footer_content{
     align-items: center;
     height: 100%;
-    justify-content: space-between;
     width: 100%;
-    overflow-x: hidden;
+    justify-content: space-between;
 }
 
 
@@ -333,7 +332,10 @@ Footer
 .current_song{
     align-items: center;
     padding: 10px;
-    flex-grow: 1;
+}
+
+.current_song .album_name a{
+    text-decoration: none;
 }
 
 .album_name{
@@ -356,11 +358,12 @@ Footer
 /* Play bar, centre side of footer */
 
 .play_bar{
-    flex-grow: 2;
+    flex-grow: 3;
+    margin: 0 20px;
 }
 
 .play_bar span{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .play_bar .play_icons{
@@ -383,7 +386,8 @@ Footer
 }
 
 .grey_bar{
-    width: 60%;
+    min-width: 40%;
+    max-width: 60%;
     height: 4px;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.386);
@@ -425,21 +429,33 @@ Footer
 .volume{
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-right: 10px;
     flex-grow: 1;
-    overflow-x: hidden;
+    padding-right:15px;
 }
 
-.volume i{
-    padding: 0 8px;
+.volume ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.volume ul li{
+    padding: 0 5px;
+}
+
+.volume ul li a{
+    color: white;
+    opacity: 100%;
 }
 
 .volume .grey_bar{
-    min-width: 40px;
-    width: 50%;
+    width: 30%;
     height: 4px;
     display: block;
+    margin: 0;
 }
+
 
 
 
@@ -567,8 +583,5 @@ Media querys
         width: calc(100% - 50px);
     }
 
-    .volume .grey_bar{
-        display: none;
-    }
 
 }
