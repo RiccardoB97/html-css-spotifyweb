@@ -25,7 +25,7 @@ body{
 
 #site_main{
     width: 100%;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
 }
 
 #site_main #content{
@@ -115,7 +115,7 @@ Main
     float: left;
     background-color: black;
     width: 230px;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
     overflow: hidden;
     font-size: 12px;
     display: flex;
@@ -249,7 +249,7 @@ nav ul .home a{
     margin: -5px 30px;
 }
 
-/* Recent section */
+/* Main albums section */
 
 .recent{
     color: white;
@@ -295,24 +295,99 @@ nav ul .home a{
 }
 
 
-
-
 /******
 Footer
 *******/
 
 #site_footer{
-    height: 90px;
+    height: 100px;
     width: 100%;
     background-color:  #282828;
     float: left;
     z-index: 2;
+    color: white;
+}
+
+.footer_content{
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
 }
 
 
+/* Current song, left side of footer */
+.album_cover img{
+    width: 50px;
+}
 
+.current_song{
+    align-items: center;
+    padding: 10px;
+    justify-self: flex-start;
+}
 
+.album_name{
+    margin-left: 10px;
+}
 
+.current_song h6, .current_song p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.current_song .left_icons{
+    margin-left: 50px;
+}
+
+.current_song .left_icons i{
+    padding: 0 5px;
+}
+
+/* Play bar, centre side of footer */
+
+.play_bar{
+    width: 70%;
+}
+
+.play_bar .play_icons{
+    justify-content: center;
+    align-items: center;
+}
+
+.play_bar .play_icons i{
+    padding: 0 10px;
+}
+
+.play_icons .footer_play{
+    font-size: 2rem;
+}
+
+.bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.grey_bar{
+    width: 40%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.386);
+    position: relative;
+    margin: 0 20px;
+}
+
+.white_bar{
+    height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2px;
+    width: 20%;
+    background-color: white;
+}
 
 
 

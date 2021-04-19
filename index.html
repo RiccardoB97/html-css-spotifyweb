@@ -275,9 +275,44 @@
 
         <!-- Site footer -->
         <footer id="site_footer">
-            <div class="current_song"></div>
-            <div class="play_bar"></div>
-            <div class="volume"></div>
+            <div class="footer_content d-flex">
+                <!-- Left side of footer -->
+                <div class="current_song d-flex">
+                    <div class="album_cover">
+                        <img src="./assets/img/sinister.jpeg" alt="sinister album cover">
+                    </div>
+                    <div class="album_name">
+                        <h6>Sinister</h6>
+                        <p class="text-white-50">Brano Nome</p>
+                    </div>
+                    <div class="left_icons text-white-50">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
+                    </div>
+                </div>
+                <!-- /Left side of footer -->
+                <!-- Middle side of footer -->
+                <div class="play_bar flex-column">
+                    <div class="play_icons d-flex">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far footer_play fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <div class="bar">
+                        <span>0:25</span>
+                        <div class="grey_bar">
+                            <div class="white_bar"></div>
+                        </div>
+                        <span>4:35</span>
+                    </div>
+
+                </div>
+                <!-- /Middle side of footer -->
+
+                <div class="volume"></div>
+            </div>
         </footer>
         <!-- /Site footer -->
     </div>
