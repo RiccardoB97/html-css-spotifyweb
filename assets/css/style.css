@@ -307,6 +307,7 @@ Footer
     z-index: 2;
     color: white;
     overflow-x: hidden;
+    font-size: 0.8rem;
 }
 
 #site_footer a{
@@ -318,7 +319,7 @@ Footer
 .footer_content{
     align-items: center;
     height: 100%;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     overflow-x: hidden;
 }
@@ -400,6 +401,25 @@ Footer
     background-color: white;
 }
 
+.play_bar .play_ball{
+    left: 95%;
+}
+
+.volume .play_ball{
+    left: 350%;
+}
+
+.play_ball{
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    border-radius: 50%;
+    background-color: white;
+    display: none;
+}
+
 /* Volume bar, right side of footer */
 
 .volume{
@@ -408,7 +428,6 @@ Footer
     height: 100%;
     flex-grow: 1;
     overflow-x: hidden;
-    margin-left: 20px;
 }
 
 .volume i{
@@ -416,8 +435,10 @@ Footer
 }
 
 .volume .grey_bar{
-    width: 60%;
+    min-width: 40px;
+    width: 50%;
     height: 4px;
+    display: block;
 }
 
 
@@ -466,6 +487,14 @@ Hover effects
 /* Changes color to the white play bar */
 .white_bar:hover, .grey_bar:hover .white_bar{
     background-color: #ADFF2F;
+    cursor: pointer;
+}
+
+.white_bar:hover, .grey_bar:hover .play_ball{
+    display: block;
+}
+
+.volume i:hover{
     cursor: pointer;
 }
 
@@ -538,5 +567,8 @@ Media querys
         width: calc(100% - 50px);
     }
 
+    .volume .grey_bar{
+        display: none;
+    }
 
 }
