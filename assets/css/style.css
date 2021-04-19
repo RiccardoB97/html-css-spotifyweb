@@ -306,6 +306,13 @@ Footer
     float: left;
     z-index: 2;
     color: white;
+    overflow-x: hidden;
+}
+
+#site_footer a{
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
 }
 
 .footer_content{
@@ -313,6 +320,7 @@ Footer
     height: 100%;
     justify-content: center;
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -324,7 +332,7 @@ Footer
 .current_song{
     align-items: center;
     padding: 10px;
-    justify-self: flex-start;
+    flex-grow: 1;
 }
 
 .album_name{
@@ -337,17 +345,21 @@ Footer
 }
 
 .current_song .left_icons{
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
-.current_song .left_icons i{
+.current_song .left_icons a{
     padding: 0 5px;
 }
 
 /* Play bar, centre side of footer */
 
 .play_bar{
-    width: 70%;
+    flex-grow: 2;
+}
+
+.play_bar span{
+    font-size: 0.8rem;
 }
 
 .play_bar .play_icons{
@@ -367,11 +379,10 @@ Footer
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .grey_bar{
-    width: 40%;
+    width: 60%;
     height: 4px;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.386);
@@ -388,6 +399,27 @@ Footer
     width: 20%;
     background-color: white;
 }
+
+/* Volume bar, right side of footer */
+
+.volume{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-grow: 1;
+    overflow-x: hidden;
+    margin-left: 20px;
+}
+
+.volume i{
+    padding: 0 8px;
+}
+
+.volume .grey_bar{
+    width: 60%;
+    height: 4px;
+}
+
 
 
 
@@ -413,6 +445,29 @@ Hover effects
     cursor: pointer;
 }
 
+#site_footer a:hover{
+    opacity: 100%;
+    color: white;
+}
+
+#site_footer .play_icons:hover{
+    cursor: pointer;
+}
+
+/* Scales up the play button when hovered */
+#site_footer .play_icons .footer_play:hover{
+    transform: scale(1.1);
+}
+
+.grey_bar:hover{
+    cursor: pointer;
+}
+
+/* Changes color to the white play bar */
+.white_bar:hover, .grey_bar:hover .white_bar{
+    background-color: #ADFF2F;
+    cursor: pointer;
+}
 
 
 
@@ -479,8 +534,9 @@ Media querys
         display: none;
     }
 
-
     #site_main .top_bar{
         width: calc(100% - 50px);
     }
+
+
 }
