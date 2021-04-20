@@ -333,7 +333,7 @@ footer a{
 .current_song{
     align-items: center;
     padding: 10px;
-
+    flex-grow: 1;
 }
 
 .current_song .album_name a{
