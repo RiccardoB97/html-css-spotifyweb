@@ -176,7 +176,7 @@ nav ul .home a{
 
 .playlist .playlist_list{
     list-style: none;
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 80%;
 }
 
