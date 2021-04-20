@@ -585,6 +585,10 @@ Media querys
     #site_main .top_bar{
         width: calc(100% - 50px);
     }
+}
 
-
+@media screen and (max-height:220px){
+    .top_navbar, #site_main .top_bar, #content{
+        display: none;
+    }
 }
