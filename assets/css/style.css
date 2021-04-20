@@ -482,7 +482,7 @@ Hover effects
 .play:hover .play-overlay, .play:hover .playbutton{
     opacity: 1;
     cursor: pointer;
-    transition: 1s linear;
+    transition: 1s ease-in;
 }
 
 #site_footer a:hover{
@@ -507,6 +507,7 @@ Hover effects
 .white_bar:hover, .grey_bar:hover .white_bar{
     background-color: #ADFF2F;
     cursor: pointer;
+    transition: 1s linear;
 }
 
 .white_bar:hover, .grey_bar:hover .play_ball{
