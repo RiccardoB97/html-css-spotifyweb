@@ -482,6 +482,7 @@ Hover effects
 .play:hover .play-overlay, .play:hover .playbutton{
     opacity: 1;
     cursor: pointer;
+    transition: 1s linear;
 }
 
 #site_footer a:hover{
