@@ -21,6 +21,7 @@ body{
     height: 100vh;
     background-color: black;
     overflow: hidden;
+    z-index: 1;
 }
 
 #site_main{
@@ -332,6 +333,7 @@ footer a{
 .current_song{
     align-items: center;
     padding: 10px;
+
 }
 
 .current_song .album_name a{
